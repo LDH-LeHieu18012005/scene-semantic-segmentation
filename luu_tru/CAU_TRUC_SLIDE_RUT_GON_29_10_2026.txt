@@ -1,0 +1,18 @@
+﻿1. TRƯỜNG ĐẠI HỌC CÔNG NGHỆ KỸ THUẬT HƯNG YÊN | BÀI TẬP LỚN · THỊ GIÁC MÁY TÍNH VÀ ỨNG DỤNG
+2. 01 / BÀI TOÁN VÀ MỤC TIÊU | Bài toán, dữ liệu và phạm vi khảo sát
+3. 02 / KIẾN TRÚC VÀ BIẾN THỂ | PSPNet: kiến trúc gốc và tổng hợp ngữ cảnh đa tỉ lệ
+4. 02 / KIẾN TRÚC VÀ CƠ CHẾ | Thay đổi lưới pooling: PPM 1236 và PPM 1237
+5. 02 / KIẾN TRÚC VÀ CƠ CHẾ | Liên kết giữa các nhánh PPM: b6_link / b7_link
+6. 02 / KIẾN TRÚC VÀ CƠ CHẾ | Cơ chế liên kết: truyền đặc trưng từ nhánh 1 đến nhánh 2
+7. 02 / KIẾN TRÚC VÀ CƠ CHẾ | Tổng hợp đặc trưng từ hai nhánh lân cận
+8. 02 / KIẾN TRÚC VÀ CƠ CHẾ | Cơ sở lựa chọn hàm tanh và cấu trúc sáu cạnh
+9. 02 / KIẾN TRÚC VÀ CƠ CHẾ | PPM kết hợp atrous: b6_aspp / b7_aspp
+10. 02 / GIAO THỨC THỰC NGHIỆM | Thiết lập so sánh và quy trình đánh giá
+11. Modal: kết quả của sáu cấu hình | 03 / KẾT QUẢ CHÍNH
+12. Đánh đổi giữa chất lượng và chi phí tính toán | 03 / ĐÁNH ĐỔI
+13. Kaggle: đối chiếu ba kiến trúc ResNet-50 | 03 / KẾT QUẢ ĐỐI CHIẾU
+14. 03 / ỨNG DỤNG MINH HỌA | PSP Studio: giao diện và kết quả phân đoạn
+15. Giới hạn nghiên cứu và phạm vi kết luận | 03 / GIỚI HẠN
+16. Kết luận và hướng phát triển | 04 / TỔNG KẾT
+17. Tài liệu tham khảo và nguồn kết quả | NGUỒN THAM KHẢO
+18. TRÂN TRỌNG CẢM ƠN | QUÝ THẦY CÔ

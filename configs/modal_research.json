@@ -1,0 +1,40 @@
+{
+  "profile": "research",
+  "source_dir": "/opt/semseg",
+  "data_root": "/mnt/pspnet-study-ade20k-v2/datasets/ADEChallengeData2016",
+  "output_dir": "/mnt/pspnet-study-ade20k-v2/results/ade20k_seed17_b16_10k_v4",
+  "classes": 150,
+  "init_kind": "backbone",
+  "initial_weights": "/mnt/pspnet-study-ade20k-v2/weights/resnet101_v2.pth",
+  "variants": [
+    "b6",
+    "b7"
+  ],
+  "seeds": [
+    17
+  ],
+  "crop": 473,
+  "batch_size": 16,
+  "accumulation": 1,
+  "max_steps": 10000,
+  "lr": 0.01,
+  "head_lr_multiplier": 10,
+  "precision": "amp_bf16",
+  "cudnn_benchmark": true,
+  "scale_range": [
+    0.5,
+    2
+  ],
+  "rotation": 10,
+  "save_every": 1000,
+  "log_every": 50,
+  "eval_crop": 473,
+  "eval_base_size": 512,
+  "val_limit": 0,
+  "eval_every": 2000,
+  "eval_subset": 500,
+  "benchmark_size": 473,
+  "benchmark_warmup": 100,
+  "benchmark_repeats": 500,
+  "benchmark_sessions": 5
+}

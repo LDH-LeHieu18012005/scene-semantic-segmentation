@@ -1,0 +1,11 @@
+.venv/
+.python-runtime/
+python-runtime.zip
+__pycache__/
+*.py[cod]
+.demo-browser/
+.env
+.env.*
+!.env.example
+*.pem
+*.key

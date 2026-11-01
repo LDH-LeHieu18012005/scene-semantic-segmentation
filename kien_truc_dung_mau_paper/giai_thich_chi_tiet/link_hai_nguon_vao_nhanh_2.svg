@@ -1,0 +1,126 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='4500' height='2040' viewBox='0 0 1500 680'><rect width='1500' height='680' fill='white'/>
+<text x='750' y='32' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='29' fill='#111111'>Tổng hợp đặc trưng tại nhánh 2 từ hai nhánh lân cận</text>
+<text x='750' y='76' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='19' fill='#111111'>Các tensor z biểu diễn đặc trưng ban đầu sau Pool → Conv 1×1 → BN → ReLU.</text>
+<polygon points='80,125 155,125 171,135 171,190 96,190 80,180' fill='white'/>
+<line x1='80' y1='125' x2='155' y2='125' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='80' y1='125' x2='96' y2='135' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='155' y1='125' x2='171' y2='135' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='96' y1='135' x2='171' y2='135' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='80' y1='125' x2='80' y2='180' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='80' y1='180' x2='96' y2='190' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='96' y1='135' x2='96' y2='190' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='171' y1='135' x2='171' y2='190' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='96' y1='190' x2='171' y2='190' stroke='#FF2638' stroke-width='1.15'/>
+<text x='130' y='225' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='22' fill='#111111'>z1: 1×1</text>
+<line x1='178' y1='157' x2='250' y2='157' stroke='#222222' stroke-width='1.15'/>
+<polygon points='250,157 243,154.3 243,159.7' fill='#222222'/>
+<rect x='254' y='141' width='170' height='32' fill='white' stroke='#222' stroke-width='1.15'/>
+<text x='339' y='157' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='20' fill='#111111'>RESIZE → 2×2</text>
+<line x1='424' y1='157' x2='490' y2='157' stroke='#222222' stroke-width='1.15'/>
+<polygon points='490,157 483,154.3 483,159.7' fill='#222222'/>
+<polygon points='495,115 585,115 602,127 602,217 512,217 495,205' fill='white'/>
+<line x1='495' y1='115' x2='585' y2='115' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='495' y1='115' x2='512' y2='127' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='585' y1='115' x2='602' y2='127' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='512' y1='127' x2='602' y2='127' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='495' y1='115' x2='495' y2='205' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='495' y1='205' x2='512' y2='217' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='512' y1='127' x2='512' y2='217' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='602' y1='127' x2='602' y2='217' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='512' y1='217' x2='602' y2='217' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='540' y1='115' x2='557' y2='127' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='495' y1='160' x2='512' y2='172' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='512' y1='172' x2='602' y2='172' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='557' y1='127' x2='557' y2='217' stroke='#FF2638' stroke-width='1.15'/>
+<line x1='607' y1='157' x2='700' y2='157' stroke='#222222' stroke-width='1.15'/>
+<polygon points='700,157 693,154.3 693,159.7' fill='#222222'/>
+<rect x='705' y='141' width='92' height='32' fill='white' stroke='#222' stroke-width='1.15'/>
+<text x='751' y='157' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='22' fill='#111111'>× α12</text>
+<line x1='797' y1='157' x2='1030' y2='157' stroke='#222222' stroke-width='1.15'/>
+<line x1='1030' y1='157' x2='1030' y2='314' stroke='#222222' stroke-width='1.15'/>
+<polygon points='1030,314 1032.7,307 1027.3,307' fill='#222222'/>
+<polygon points='80,465 170,465 190,478 190,568 100,568 80,555' fill='white'/>
+<line x1='80' y1='465' x2='170' y2='465' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='80' y1='465' x2='100' y2='478' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='170' y1='465' x2='190' y2='478' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='100' y1='478' x2='190' y2='478' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='80' y1='465' x2='80' y2='555' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='80' y1='555' x2='100' y2='568' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='100' y1='478' x2='100' y2='568' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='190' y1='478' x2='190' y2='568' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='100' y1='568' x2='190' y2='568' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='110' y1='465' x2='130' y2='478' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='80' y1='495' x2='100' y2='508' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='100' y1='508' x2='190' y2='508' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='130' y1='478' x2='130' y2='568' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='140' y1='465' x2='160' y2='478' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='80' y1='525' x2='100' y2='538' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='100' y1='538' x2='190' y2='538' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='160' y1='478' x2='160' y2='568' stroke='#00A9E0' stroke-width='1.15'/>
+<text x='140' y='604' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='22' fill='#111111'>z3: 3×3</text>
+<line x1='195' y1='516' x2='250' y2='516' stroke='#222222' stroke-width='1.15'/>
+<polygon points='250,516 243,513.3 243,518.7' fill='#222222'/>
+<rect x='254' y='500' width='170' height='32' fill='white' stroke='#222' stroke-width='1.15'/>
+<text x='339' y='516' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='20' fill='#111111'>POOL → 2×2</text>
+<line x1='424' y1='516' x2='490' y2='516' stroke='#222222' stroke-width='1.15'/>
+<polygon points='490,516 483,513.3 483,518.7' fill='#222222'/>
+<polygon points='495,470 585,470 602,482 602,572 512,572 495,560' fill='white'/>
+<line x1='495' y1='470' x2='585' y2='470' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='495' y1='470' x2='512' y2='482' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='585' y1='470' x2='602' y2='482' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='512' y1='482' x2='602' y2='482' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='495' y1='470' x2='495' y2='560' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='495' y1='560' x2='512' y2='572' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='512' y1='482' x2='512' y2='572' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='602' y1='482' x2='602' y2='572' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='512' y1='572' x2='602' y2='572' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='540' y1='470' x2='557' y2='482' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='495' y1='515' x2='512' y2='527' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='512' y1='527' x2='602' y2='527' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='557' y1='482' x2='557' y2='572' stroke='#00A9E0' stroke-width='1.15'/>
+<line x1='607' y1='516' x2='700' y2='516' stroke='#222222' stroke-width='1.15'/>
+<polygon points='700,516 693,513.3 693,518.7' fill='#222222'/>
+<rect x='705' y='500' width='92' height='32' fill='white' stroke='#222' stroke-width='1.15'/>
+<text x='751' y='516' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='22' fill='#111111'>× α32</text>
+<line x1='797' y1='516' x2='1030' y2='516' stroke='#222222' stroke-width='1.15'/>
+<line x1='1030' y1='516' x2='1030' y2='340' stroke='#222222' stroke-width='1.15'/>
+<polygon points='1030,340 1027.3,347 1032.7,347' fill='#222222'/>
+<polygon points='755,280 845,280 862,292 862,382 772,382 755,370' fill='white'/>
+<line x1='755' y1='280' x2='845' y2='280' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='755' y1='280' x2='772' y2='292' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='845' y1='280' x2='862' y2='292' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='772' y1='292' x2='862' y2='292' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='755' y1='280' x2='755' y2='370' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='755' y1='370' x2='772' y2='382' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='772' y1='292' x2='772' y2='382' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='862' y1='292' x2='862' y2='382' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='772' y1='382' x2='862' y2='382' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='800' y1='280' x2='817' y2='292' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='755' y1='325' x2='772' y2='337' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='772' y1='337' x2='862' y2='337' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='817' y1='292' x2='817' y2='382' stroke='#FF8518' stroke-width='1.15'/>
+<text x='820' y='414' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='22' fill='#111111'>z2: đích ban đầu</text>
+<line x1='878' y1='327' x2='1018' y2='327' stroke='#222222' stroke-width='1.15'/>
+<polygon points='1018,327 1011,324.3 1011,329.7' fill='#222222'/>
+<circle cx='1030' cy='327' r='9' fill='white' stroke='#222' stroke-width='1.1'/>
+<text x='1030' y='327' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='18' fill='#111111'>+</text>
+<line x1='1042' y1='327' x2='1150' y2='327' stroke='#222222' stroke-width='1.15'/>
+<polygon points='1150,327 1143,324.3 1143,329.7' fill='#222222'/>
+<polygon points='1155,280 1245,280 1262,292 1262,382 1172,382 1155,370' fill='white'/>
+<line x1='1155' y1='280' x2='1245' y2='280' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1155' y1='280' x2='1172' y2='292' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1245' y1='280' x2='1262' y2='292' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1172' y1='292' x2='1262' y2='292' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1155' y1='280' x2='1155' y2='370' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1155' y1='370' x2='1172' y2='382' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1172' y1='292' x2='1172' y2='382' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1262' y1='292' x2='1262' y2='382' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1172' y1='382' x2='1262' y2='382' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1200' y1='280' x2='1217' y2='292' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1155' y1='325' x2='1172' y2='337' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1172' y1='337' x2='1262' y2='337' stroke='#FF8518' stroke-width='1.15'/>
+<line x1='1217' y1='292' x2='1217' y2='382' stroke='#FF8518' stroke-width='1.15'/>
+<text x='1220' y='414' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='22' fill='#111111'>z&apos;2: đích sau trộn</text>
+<text x='750' y='640' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='28' fill='#A23479'>z&apos;2 = z2 + α12 R1→2(z1) + α32 R3→2(z3)</text>
+<text x='750' y='674' text-anchor='middle' dominant-baseline='central' font-family='Times New Roman,serif' font-size='18' fill='#111111'>Đặc trưng z′2 được nội suy về lưới backbone trước phép ghép kênh CONCAT.</text>
+</svg>

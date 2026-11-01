@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PSP Studio · Phân đoạn ảnh</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">P<span>▦</span></span><strong>PSP<span>Studio</span></strong></a><div class="top-meta"><span class="status-dot"></span> LOCAL WORKSPACE <span class="divider">/</span> <span>CPU inference</span></div><span class="version">ADE20K · 150 classes</span></header>
+  <main>
+    <div class="intro"><div><div class="eyebrow">COMPUTER VISION / INTERACTIVE DEMO</div><h1>Nhìn ảnh qua từng lớp.</h1><p>Khám phá cách PSPNet biến một bức ảnh thành bản đồ ngữ nghĩa.</p></div><div class="model-badge"><span class="model-icon">▦</span><div><strong>PSPNet · ResNet-101</strong><span>PPM 1 / 2 / 3 / 7 <b>35,79% mIoU¹</b></span></div></div></div>
+
+    <section class="controls" aria-label="Thiết lập dự đoán">
+      <label class="upload" id="dropZone"><input type="file" id="fileInput" accept="image/png,image/jpeg,image/webp,image/bmp"><span class="upload-icon">＋</span><span><strong id="fileName">Chọn hoặc thả ảnh vào đây</strong><small>JPG, PNG, WebP · tối đa 20 MB / 16 MP</small></span></label>
+      <div class="control-field"><label for="resolution">KÍCH THƯỚC SUY LUẬN</label><select id="resolution"><option value="512">512 px · cấu hình đánh giá</option><option value="384">384 px · nhanh hơn</option><option value="768">768 px · nhiều cửa sổ hơn</option></select></div>
+      <button class="run-btn" id="runButton" disabled><span>▶</span> Bắt đầu phân đoạn</button>
+    </section>
+    <div id="errorBox" class="error" role="alert" hidden></div>
+    <div class="workspace-meta"><div><span class="pill" id="modelStatus">Đang kiểm tra checkpoint…</span><span id="imageInfo">Chưa chọn ảnh</span></div><span id="elapsed">SẴN SÀNG</span></div>
+
+    <section class="workspace">
+      <article class="image-card"><div class="card-heading"><div><span class="step-label">01</span><h2>Ảnh đầu vào</h2></div><span class="tiny-badge">ORIGINAL</span></div><div class="image-stage" id="inputStage"><div class="empty-state" id="inputEmpty"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><rect x="9" y="12" width="46" height="40" rx="6" stroke="currentColor" stroke-width="2"/><circle cx="23" cy="25" r="4" stroke="currentColor" stroke-width="2"/><path d="m11 44 13-12 9 9 9-14 12 17" stroke="currentColor" stroke-width="2"/></svg><strong>Mỗi pixel, một câu chuyện.</strong><span>Chọn ảnh để bắt đầu khám phá</span></div><img id="inputImage" alt="Ảnh đầu vào" hidden></div><div class="card-foot"><span class="muted-dot"></span><span>Ảnh được xử lý trên máy của bạn</span></div></article>
+      <article class="image-card result-card"><div class="card-heading"><div><span class="step-label">02</span><h2>Kết quả phân đoạn</h2></div><div class="view-switch" aria-label="Kiểu kết quả"><button id="overlayButton" class="active" disabled>Lớp phủ</button><button id="maskButton" disabled>Nhãn màu</button></div></div><div class="image-stage" id="resultStage"><div class="empty-state" id="resultEmpty"><div class="pixel-symbol">▧</div><strong>Chờ model quan sát.</strong><span>Kết quả sẽ xuất hiện dần theo từng cửa sổ ảnh</span></div><img id="compareOriginal" alt="Ảnh gốc để so sánh" hidden><img id="resultImage" alt="Kết quả phân đoạn cập nhật trực tiếp" hidden><div id="scanBox" class="scan-box" hidden><span>ĐANG XỬ LÝ</span></div></div><div class="card-foot"><span class="live-dot" id="liveDot"></span><span id="resultCaption">Chưa có kết quả · không sử dụng GPU</span></div></article>
+      <aside class="inspector"><div class="card-heading"><div><span class="step-label">03</span><h2>Bên trong model</h2></div><span class="live-tag">LIVE</span></div><div class="activation-stage"><img id="activationImage" alt="Cường độ kích hoạt trung gian của model" hidden><div id="activationEmpty"><span>◈</span><p>Đặc trưng trung gian<br>sẽ hiển thị ở đây</p></div></div><div class="activation-info"><strong id="activationTitle">Chưa bắt đầu</strong><span id="activationShape">ResNet-101 → PPM → classifier</span></div><div class="layer-track" id="layerTrack"><span data-layer="0">Stem</span><span data-layer="1">R1</span><span data-layer="2">R2</span><span data-layer="3">R3</span><span data-layer="4">R4</span><span data-layer="5">PPM</span></div><p class="activation-note">Màu ấm thể hiện cường độ kích hoạt lớn hơn trong cửa sổ hiện tại. Đây là đặc trưng trung gian, chưa phải nhãn phân đoạn.</p></aside>
+    </section>
+
+    <section class="progress-panel" aria-live="polite"><div class="progress-top"><div><span class="progress-icon" id="progressIcon">◎</span><strong id="stageText">Sẵn sàng quan sát</strong><span id="stageDetail">Chọn ảnh và bắt đầu. Model được nạp một lần vào RAM.</span></div><strong id="percentage">0<span>%</span></strong></div><div class="progress-track"><div id="progressBar"></div></div><div class="progress-bottom"><span id="tileText">SLIDING WINDOW · 473 × 473</span><span id="timingText">Tiến độ theo các bước xử lý thực tế</span></div></section>
+
+    <section id="comparisonPanel" class="comparison-panel" hidden><label for="compareSlider">SO SÁNH ẢNH GỐC / KẾT QUẢ <small>Kéo để thay đổi phần kết quả hiển thị</small></label><input id="compareSlider" type="range" min="0" max="100" value="100"><span id="compareValue">100%</span></section>
+    <section class="results-panel" id="resultsPanel" hidden><div class="results-heading"><div><div class="eyebrow">SCENE BREAKDOWN</div><h2>Những gì model nhìn thấy</h2><p>Tỉ lệ diện tích nhãn dự đoán trong ảnh, không phải độ tin cậy.</p></div><div class="downloads"><a id="downloadOverlay" class="secondary-btn" download="pspnet_overlay.png">↓ Ảnh lớp phủ</a><a id="downloadMask" class="secondary-btn" download="pspnet_mask.png">↓ Nhãn màu</a><a id="downloadLabels" class="secondary-btn" download="pspnet_class_ids.png">↓ Mã lớp</a></div></div><div class="legend" id="legend"></div></section>
+    <footer><span><strong>PSP Studio</strong> · ADE20K semantic segmentation</span><p>¹ Kết quả validation của checkpoint: seed 17, 10.000 updates. Ảnh demo không được tính mIoU khi chưa có nhãn thật.<br>Ảnh dài hơn 1.600 px được thu nhỏ để giới hạn RAM. Mức 384 / 768 thay đổi cấu hình suy luận so với phép đánh giá đã báo cáo.</p><span>LOCAL · PRIVATE · CPU</span></footer>
+  </main><script src="/app.js"></script>
+</body>
+</html>

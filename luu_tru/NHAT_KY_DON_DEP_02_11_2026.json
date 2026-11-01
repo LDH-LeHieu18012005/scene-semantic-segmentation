@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-02",
+  "timezone": "Asia/Saigon",
+  "scope": "Remove reproducible Python caches, extracted installer archive, and generated demo images/log; retain desktop-result.png used by slide generator.",
+  "removed_cache": {
+    "roots": [
+      ".venv",
+      "demo",
+      ".python-runtime"
+    ],
+    "pattern": "**/__pycache__/",
+    "directories": 806,
+    "files": 7034,
+    "bytes": 149379510
+  },
+  "removed_files": [
+    {
+      "path": "python-runtime.zip",
+      "bytes": 11133606
+    },
+    {
+      "path": "demo/validation/browser-server.log",
+      "bytes": 663
+    },
+    {
+      "path": "demo/validation/desktop-ready.png",
+      "bytes": 97279
+    },
+    {
+      "path": "demo/validation/desktop-processing.png",
+      "bytes": 467806
+    },
+    {
+      "path": "demo/validation/mobile.png",
+      "bytes": 134787
+    },
+    {
+      "path": "demo/validation/example_overlay.png",
+      "bytes": 384761
+    },
+    {
+      "path": "demo/validation/example_mask.png",
+      "bytes": 6953
+    },
+    {
+      "path": "demo/validation/example_labels.png",
+      "bytes": 5282
+    }
+  ],
+  "total_removed_files": 7042,
+  "total_removed_bytes": 161610647,
+  "preserved_sha256": [
+    {
+      "path": "deeplabv3-kaggle-ade20k.ipynb",
+      "sha256": "a6b940a16a221d1e14e5470c017a4bd482308a98924e265049acb998d7cb6dc1"
+    },
+    {
+      "path": "fcn-kaggle-ade20k.ipynb",
+      "sha256": "fd0b2c01ff72a5902448fc9f938c0a5c722b92f7dc9e91826ed40da9a14381a9"
+    },
+    {
+      "path": "pspnet-kaggle-ade20k.ipynb",
+      "sha256": "b47db8457fccce8c97e8991e6ad9f989c3b1f57e56488c56cb57c23ecff774b3"
+    },
+    {
+      "path": "pspnet-modal-aspp.ipynb",
+      "sha256": "6f813660f547e057adc439a6de20a0d4ae33022fa8f8ee0fb2c8cd37feb74b32"
+    },
+    {
+      "path": "pspnet-modal-link.ipynb",
+      "sha256": "475102ed5676fea3a571b204610f5434f3c664a2438bc707d98f50044109e28d"
+    },
+    {
+      "path": "pspnet-modal.ipynb",
+      "sha256": "48d88b116114b92a3064817cc733e9758380d801054e9a1bded685fa15736543"
+    },
+    {
+      "path": "bao_cao/BAO_CAO_LE_DUONG_HIEU_DUNG_MAU_PAPER.docx",
+      "sha256": "68f48c85ef83a772d17aa8ce3821c512d7b9f1a25805d1142e89fb7093672994"
+    },
+    {
+      "path": "slide_thuyet_trinh/THUYET_TRINH_LE_DUONG_HIEU_DUNG_MAU_PAPER.pptx",
+      "sha256": "6c3d94ffa3e1392f9dfed9ea936abb6089f1af3e8d9e525ccba81551441571f8"
+    }
+  ],
+  "notes": [
+    "All six notebooks serve distinct experiments; saved outputs retained.",
+    "Keep both .python-runtime and .venv: bundled interpreter uses .venv/Lib/site-packages.",
+    "Runtime ZIP contents matched installed files except intentionally customized python312._pth.",
+    "Keep reports, slides, checkpoint, source figures, original document samples, archived review evidence and full pinned upstream source.",
+    "DOWNLOAD_MODEL.cmd and browser_check.mjs now select bundled runtime when present.",
+    "Generated demo images can be regenerated with demo/validate.py and demo/browser_check.mjs.",
+    "Python caches may be regenerated automatically during normal use."
+  ],
+  "verification": {
+    "checkpoint_sha256": "b7f060e54ec271ea41049daa18f82d607b2581b93d642884971d192650ac89cd",
+    "demo_validation": "PASS; see demo/validation/report.json",
+    "cold_model_load_after_cleanup": "PASS",
+    "preserved_sha256": "PASS",
+    "office_archive_integrity": "PASS",
+    "slide_source_images": "PASS",
+    "python_and_notebook_syntax": "PASS",
+    "javascript_syntax": "PASS",
+    "browser_gui_rerun": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "browser": "Chrome headless",
+  "desktop": "1440x1100",
+  "mobile": "390x844",
+  "exceptions": [],
+  "mobileOverflow": false,
+  "checks": {
+    "mask": true,
+    "compare": "inset(0px 50% 0px 0px)",
+    "legend": 11,
+    "download": true,
+    "caption": "Hoàn thành · 7.27 giây · 2 cửa sổ"
+  },
+  "passed": true
+}

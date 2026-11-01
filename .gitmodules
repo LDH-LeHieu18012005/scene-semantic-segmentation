@@ -1,0 +1,3 @@
+[submodule "demo/vendor/semseg"]
+	path = demo/vendor/semseg
+	url = https://github.com/hszhao/semseg.git

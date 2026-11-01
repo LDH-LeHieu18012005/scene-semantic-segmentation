@@ -1,0 +1,23 @@
+{
+  "checkpoint_sha256": "b7f060e54ec271ea41049daa18f82d607b2581b93d642884971d192650ac89cd",
+  "device": "cpu",
+  "model": "b7",
+  "classes": 150,
+  "streamed_events": 20,
+  "tiles": 2,
+  "inference_seconds_with_first_load": 13.04,
+  "pixel_identical_to_notebook_reference": true,
+  "sample": "hszhao/semseg figure/demo/ADE_val_00001515.jpg",
+  "checks": [
+    "checkpoint hash",
+    "strict model loading",
+    "official class order",
+    "HTTP assets/status",
+    "invalid image rejection",
+    "real layer progress",
+    "monotonic progress",
+    "output IDs",
+    "reference pixel equality",
+    "hook cleanup"
+  ]
+}

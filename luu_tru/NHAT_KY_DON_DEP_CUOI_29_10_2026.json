@@ -1,0 +1,69 @@
+﻿{
+    "date":  "2026-10-29",
+    "preserved_finals":  {
+                             "bao_cao/BAO_CAO_LE_DUONG_HIEU_DUNG_MAU_PAPER.docx":  "E8EC1756681423D9F9D68BEDB213062C10BDC96E609D2CD1D56DD0B58CD04460",
+                             "slide_thuyet_trinh/THUYET_TRINH_LE_DUONG_HIEU_DUNG_MAU_PAPER.pptx":  "E0474DBD6213FBF8EACB7052C1924F967A30DFD832592368878EB2D84B323779"
+                         },
+    "removed":  [
+                    {
+                        "bytes":  3602960,
+                        "path":  "bao_cao/BAO_CAO_CUOI_CUNG_LE_DUONG_HIEU_KIEN_TRUC.docx"
+                    },
+                    {
+                        "bytes":  12970488,
+                        "path":  "luu_tru/SLIDE_DAY_DU_35_TRANG_29_10_2026.zip"
+                    },
+                    {
+                        "bytes":  12712774,
+                        "path":  "luu_tru/SLIDE_TRUOC_BO_SUNG_LY_DO_LINK_29_10_2026.zip"
+                    },
+                    {
+                        "bytes":  32290465,
+                        "path":  "luu_tru/TAI_LIEU_TRUOC_KHI_DOI_HINH_29_10_2026.zip"
+                    },
+                    {
+                        "bytes":  10544440,
+                        "path":  "luu_tru/bao_cao_cu"
+                    },
+                    {
+                        "bytes":  6284814,
+                        "path":  "luu_tru/slide_cu"
+                    },
+                    {
+                        "bytes":  4856,
+                        "path":  "luu_tru/don_dep_29_10_2026.ps1"
+                    },
+                    {
+                        "bytes":  5123,
+                        "path":  "luu_tru/don_dep_hinh_29_10_2026.ps1"
+                    },
+                    {
+                        "bytes":  3286,
+                        "path":  "luu_tru/NHAT_KY_DON_DEP_29_10_2026.json"
+                    },
+                    {
+                        "bytes":  3830,
+                        "path":  "luu_tru/NHAT_KY_DON_DEP_HINH_29_10_2026.json"
+                    },
+                    {
+                        "bytes":  10208,
+                        "path":  "luu_tru/nguon_hinh_kien_truc/cap_nhat_slide_link.ps1"
+                    },
+                    {
+                        "bytes":  12004,
+                        "path":  "luu_tru/nguon_hinh_kien_truc/rut_gon_slide.ps1"
+                    },
+                    {
+                        "bytes":  62660,
+                        "path":  "kien_truc_dung_mau_paper/giai_thich_chi_tiet/link_mot_canh.png"
+                    },
+                    {
+                        "bytes":  62493,
+                        "path":  "kien_truc_dung_mau_paper/giai_thich_chi_tiet/link_vi_du_so.png"
+                    }
+                ],
+    "removed_bytes":  78570401,
+    "blocked":  [
+
+                ]
+}
